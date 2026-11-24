@@ -20,13 +20,13 @@ exp1_boolean_min_tb.v	Verilog testbench
 exp1_boolean_min.vcd	VCD waveform dump generated during simulation
 
 ## Verilog Programmodule fun (
+module fun (
 input wire A, 
 input wire B, 
 output wire F 
 ); 
 assign F = (~A) | B ;    // F = A' + B 
 endmodule
-
 
 
 ## TestBench Program
@@ -116,8 +116,8 @@ was minimized to F=B'D'+BD.
 and successfully implemented using Verilog HDL.
 
 ## OUTPUT
+<img width="1280" height="702" alt="WhatsApp Image 2026-11-20 at 15 37 47" src="https://github.com/user-attachments/assets/24a0d0dd-e99b-4ed7-b107-eae5cb92a640" />
 
-<img width="1280" height="702" alt="WhatsApp Image 2026-11-20 at 15 37 47" src="https://github.com/user-attachments/assets/008e925c-9b02-4d95-843f-611d17964b18" /
 
 
 The design was compiled and simulated using Synopsys VCS, and the functionality was verified using DVE waveform analysis.
